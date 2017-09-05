@@ -6,7 +6,7 @@ $items_per_bucket = 7; // number of items render in a bucket
 $number_of_buckets = 5; // number of buckets to render the items
 
 $lists = [];
-// ItemList::create('main')->appendTo($lists);
+ItemList::create('main')->appendTo($lists);
 // sub items
 ItemList::create('main-1')->appendTo($lists);
 ItemList::create('main-2')->appendTo($lists);
