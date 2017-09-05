@@ -38,3 +38,16 @@ class ItemList {
 	}
 
 }
+
+$lists = [];
+ItemList::create('main')->appendTo($lists);
+// sub items
+ItemList::create('main-1')->appendTo($lists);
+ItemList::create('main-2')->appendTo($lists);
+ItemList::create('main-3')->appendTo($lists);
+// third layer items
+ItemList::create('main-1-1')->appendTo($lists);
+ItemList::create('main-1-2')->appendTo($lists);
+ItemList::create('main-1-3')->appendTo($lists);
+
+return $lists;
