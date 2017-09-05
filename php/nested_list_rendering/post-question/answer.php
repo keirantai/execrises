@@ -52,7 +52,7 @@ function getNestedList($key) {
  */
 function printItems($list, $prefix='') {
 	foreach ($list->items as $item) {
-		echo $prefix . $item ."\r\n";
+		pl($prefix . $item);
 
 		if (hasNestedList($item)) {
 			printItems(getNestedList($item), $prefix . '    ');
